@@ -1,19 +1,19 @@
 import streamlit as st
-import os
+# import os
 from streamlit_option_menu import option_menu
 # from PIL import Image
 # Set the title of the web app
 # st.title("Tech & Analytics Consultancy")
 
-script_dir = os.path.dirname(__file__)
-image_path = os.path.join(script_dir, "logo_vectorize.png")
+# script_dir = os.path.dirname(__file__)
+# image_path = os.path.join(script_dir, "logo_vectorize.png")
 
-# logo = Image.open(image_path)
+# # logo = Image.open(image_path)
 
 # Add a navigation bar to the sidebar
 with st.container():
     # st.image(logo, use_column_width=True)
-    st.image(image_path, use_column_width=True)
+    st.image("logo_vectorize.png", use_column_width=True)
 
     selected = option_menu(
         menu_title=None,
